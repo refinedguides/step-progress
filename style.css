@@ -10,10 +10,10 @@
 body {
   background: #f1e1c2;
   background: linear-gradient(135deg, #f1e1c2, #fcbc98);
-  min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  flex-direction: column;
 }
 
 h1 {
@@ -22,8 +22,8 @@ h1 {
 }
 
 .container {
-  width: 90%;
-  max-width: 600px;
+  margin-block: auto;
+  width: min(600px, 90%);
   display: grid;
   gap: 50px;
 }
